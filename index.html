@@ -1,23 +1,18 @@
-<!--
-    Dans ce devoir, j'ai utilisé des "attributs" comme: 
-    link, vlink, alink, bgcolor, align, color, ...etc.
-    Si dans le "Checkpoint CSS" on fait le style de "checkpoint HTML"
-    je vais travailles ces "attributs" en css.
-  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CheckPoint HTML</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>CSS Project</title>
 </head>
 
-<body bgcolor="#ecf0f1" link="#e74c3c" vlink="#e74c3c" alink="#f58233">
-    <header id="index">
+<body class="body">
+    <header id="index" class="mainHeader">
         <!-------------------------------------------------------- navbar -------------------------------------------------------->
         <nav>
-            <ul type="none">
+            <ul>
                 <li><a href="#index">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
@@ -27,11 +22,11 @@
         </nav>
     </header>
     
-    <main>
+    <main class="mainContent">
         <!------------------------------------------------------ About Section ------------------------------------------------------------->
-      <section id="about">
+      <section id="about" class="Section">
         <h1>About</h1>
-        <hr size="3px" color="#e74c3c" align="left" width="7%">
+        <hr class="lign">
         <article>
             <p>
                 Messaadi Chaima née le 06 juillet 2001 à Sidi M'hamed Alger, elle a obtenu son baccalauréat section
@@ -52,9 +47,9 @@
         </article>
       </section>  
       <!--------------------------------------------------------- Work Section -------------------------------------------------------->
-      <section id="work">
+      <section id="work" class="Section">
         <h1>Work</h1>
-        <hr size="3px" color="#e74c3c" align="left" width="7%">
+        <hr class="lign">
         <article>
             <p>
                 J'ai fait un mini projet dans le domaine "Machine learning", le sujet
@@ -62,11 +57,11 @@
                 <br>
                 Voici un lien vers le code source de ce mini projet: 
                 <a href="https://github.com/Messaadi-Chaima/ML-Social-Network-Ads" target="_blank">
-                    Click ici</a> 
+                   <b>Click ici</b> </a> 
                     <br>
                 Parmi les cha&icirc;nes youtube à partir desquels j'ai suivi le domaine Artificial 
                 intelligence (AI): <a href="https://www.youtube.com/c/MachineLearnia/playlists" target="_blank">
-                MachineLearnia</a> . <br> <br>
+                <b>MachineLearnia</b> </a> . <br> <br>
                 <iframe width="853" height="480" src="https://www.youtube.com/embed/vG6tDQc86Rs?list=PLO_fdPEVlfKqUF5BPKjGSh7aV9aBshrpY"
                 title="RÉGRESSION LINÉAIRE NUMPY - ML#8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -74,9 +69,9 @@
         </article>
       </section>
       <!-------------------------------------------------------- Resume Section ----------------------------------------------------------->
-      <section id="resume">
+      <section id="resume" class="Section">
         <h1>Resume</h1>
-        <hr size="3px" color="#e74c3c" align="left" width="7%">
+        <hr class="lign">
         <article>
             <div>
                 <img src="/Images/person.png" alt="photo" width="15%">
@@ -91,32 +86,27 @@
             </div>
             <br> <br>
             <div>
-                <h1>FORMATION</h1>
-                <p>2020-2022 &nbsp; &nbsp; <strong> &nbsp; &nbsp;
-                    &emsp;  &emsp; &emsp; &emsp; &emsp;    
-                    Licence en Ingénierie des Systèmes d'Information et des Logiciels</strong>
+                <h2>FORMATION</h2>
+                <p>2020-2022  <span id="tab1"></span>
+                <b>Licence en Ingénierie des Systèmes d'Information et des Logiciels</b>  
                 <br>
                 <small>
-                Alger &emsp; &emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp; &emsp; &nbsp; 
+                Alger <span id="tab4"></span>
                 Université des Sciences et de la Technologie Houari 
                 Boumediene (USTHB)</small>
                 </p>
-                <p>septembre 2021-octobre 2021 &nbsp; &nbsp; <strong>Machine Learning</strong>
+                <p>septembre 2021-octobre 2021 <span id="tab2"></span>  <strong>Machine Learning</strong>
                 <br>
                 <small>
-                    Alger &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                    &emsp;&emsp;&emsp; 
+                    Alger <span id="tab4"></span>
                     A&iuml;n naadja, Djasr Kasentina
                 </small>
                 </p>
-                <p>2022-Actuellement &nbsp; &nbsp;
-                    &emsp; &emsp; &emsp;
+                <p>2022-Actuellement <span id="tab3"></span>
                     <strong>Développement web </strong>
                     <br>
                     <small>
-                        Alger &emsp;&emsp; &emsp; &emsp; 
-                        &emsp; &emsp; &nbsp; &emsp; &emsp; &emsp; &emsp; 
+                        Alger <span id="tab4"></span>
                         GomyCode bab ezzouar
                     </small>
                     </p>
@@ -138,7 +128,7 @@
                         <meter min="0" max="100" value="70"></meter> 
                     </div>
                     <div>
-                        <h1>LANGUES</h1>
+                        <h2>LANGUES</h2>
                         <span>Anglais: Bien</span> <br>
                         <span>Fran&ccedil;ais: Bien</span>
                     </div>
@@ -151,14 +141,13 @@
                         <a href="https://github.com/Messaadi-Chaima" target="_blank">
                             <img src="Images/github.png" alt="Gituhb" width="70"> </a>
                     </div>
-                    <hr>
             </div>
         </article>
       </section>
       <!--------------------------------------------------------- Contact Section -------------------------------------------------------------->
-      <section id="contact">
-        <h1>Contact</h1>
-        <hr size="3px" color="#e74c3c" align="left" width="7%">
+      <section id="contact" class="Section">
+        <h2>Contact</h2>
+        <hr class="lign">
         <h4>Réseaux Sociaux</h4>
         <a href="https://www.facebook.com/chaima.manel.148/" target="_blank">
             <img src="Images/facebook.png" alt="Facebook" width="70"> </a> &nbsp;
@@ -183,18 +172,16 @@
                 <textarea name="msg" id="message" cols="30" rows="10" placeholder="Message" required></textarea> <br>
                 <input type="submit" value="Submit">
             </form> 
-            <hr> 
       </section>
     </main>
 
     <!------------------------------------------ Aside Page ----------------------------------------------------------------------------->
-    <aside>
+    <aside class="aside">
         <img src="Images/image.jpeg" alt="Aside">
         <img src="Images/image1.png" alt="Aside1">
     </aside>
-    <hr>
     <!------------------------------------------ Footer Page ----------------------------------------------------------------------------->
-    <footer>
+    <footer class="Footer">
         <p>Ceci est ma page web dans le but d'étudier dans une école <strong>GomyCode</strong> en Web 
             Developement @2022
         </p>
